@@ -1,4 +1,7 @@
 package henrique.com.pass_in.repositories;
 
-public interface AttendeeRepository {
+import henrique.com.pass_in.domain.attendee.Attendee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AttendeeRepository extends JpaRepository<Attendee, String> {
 }
